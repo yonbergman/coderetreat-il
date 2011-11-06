@@ -1,17 +1,22 @@
 !!!5
 %head
-  %title!= title
+  %title!= "מפגש הקוד ריטריט העברי הראשון"
   %link{:rel => "stylesheet", :href => "font/stylesheet.css", :type => "text/css", :media => "screen", :charset => "utf-8"}
   %link{:rel => "stylesheet", :href => "/style", :type => "text/css", :media => "screen", :charset => "utf-8"}
 %body
   .container
     %header
       .text
-        %h1!= header1
-        %h2!= header2
-        %h3!= header3
+        %h1!= "מפגש הקוד ריטריט"
+        %h2!= "העברי הראשון"
+        %h3!= "יום שבת ה-3 בדצמבר"
       .ribbon
-        %a{:href => "http://coderetreat.com/global_day.html"}!= ribbon.join("<br>")
+        %a{:href => "http://coderetreat.com/global_day.html"}
+          != "חלק מהיום"
+          %br
+          != "הבינלאומי"
+          %br
+          != "לקוד ריטריט"
     .main
       %nav
         %a{:href => "#details"}!= "פרטים"
