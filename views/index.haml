@@ -1,0 +1,82 @@
+!!!5
+%head
+  %title!= title
+  %link{:rel => "stylesheet", :href => "font/stylesheet.css", :type => "text/css", :media => "screen", :charset => "utf-8"}
+  %link{:rel => "stylesheet", :href => "/style", :type => "text/css", :media => "screen", :charset => "utf-8"}
+%body
+  .container
+    %header
+      .text
+        %h1!= header1
+        %h2!= header2
+        %h3!= header3
+      .ribbon
+        %a{:href => "http://coderetreat.com/global_day.html"}!= ribbon.join("<br>")
+    .main
+      %nav
+        %a{:href => "#details"}!= "פרטים"
+        %a{:href => "#location"}!= "מקום"
+        %a{:href => "#doing"}!= "מה עושים"
+        %a{:href => "#sponser"}!= "ספונסר"
+        %a{:href => "#organizers"}!= "מארגנים"
+
+      %a{:name => :beginning}
+      %h4 מפגש קוד ריטריט
+      %p
+        ביום שבת ה-3 לדצמבר מתרחש ברחביי העולם יום הקוד ריטריט הבנילאומי, זהו יום ראשון מסוגו ואנחנו החלטנו שאנחנו צריכים להרים נציגות ליום גם בארץ.
+        %br
+        קוד ריטריט יום שלם שמוגדש ללמידה ואימון של יכולות פיתוח התוכנה שלכם. מטרת היום היא לתת סביבה נקייה מרעש של 'דדליינים' ומשימות כדי לאפשר לכם להתאמן על עקרונות פיתוח התוכנה החשובים לכם.
+        %br
+        במהלך היום יצא לכם לעבוד בזוגות עם עם מספר אנשים ולהתאמן על TDD, Clean Code, SOLID ועוד עקרונות פיתוח תוכנה שלא בהכרח מוצאים להם זמן ביום-יום.
+
+      %a{:name => :details}
+      %h4 פרטים
+      %ul
+        %li ההרשמה חובה ומחייבת, האירוע עצמו חינם אבל אנחנו מבקשים שתשארו כל היום - הרשמה
+        %li התחלה ב-9:00 בבקשה תגיעו בזמן
+        %li סוף היום יהיה בסביבות 17:00 - 17:30
+        %li תביאו לפטופ לפיתוח (בבקשה תדאגו שיש בו סביבה לכל שפה בה תרצו לעבוד)
+        %li ארוחת בוקר וצהריים עלינו
+        %li מי שרוצה - בירה אחרי
+
+      .map
+        <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=%D7%A9%D7%93%D7%A8%D7%95%D7%AA+%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93+73,+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91+%D7%99%D7%A4%D7%95,+%D7%99%D7%A9%D7%A8%D7%90%D7%9C&amp;aq=t&amp;sll=25.005973,37.089844&amp;sspn=62.957983,114.169922&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Sderot+Rothschild+73,+Tel+Aviv-Yafo,+Israel&amp;t=m&amp;ll=32.066374,34.776835&amp;spn=0.005455,0.006437&amp;z=16&amp;output=embed&amp;iwloc=near"></iframe>
+      %a{:name => :location}
+      %h4 מקום
+      %p
+        המפגש יערך במשרדי ה- eBay Israel Social Center הידועים גם בתור המשרדים של The Gifts Project, ברוטשילד 73 פינת רחוב מז"אה.
+        הכניסה לבניין היא מרחוב מז"אה ליד הטיב טעם, בכניסה יש שלטים של הGifts Project, אפשר לעלות במדרגות 3 קומות או לרדת חצי קומה ולעלות במעלית (קומה 3)
+      %p
+        %strong חניה
+        %br
+        ברחוב מז"אה פינת אחד העם יש חניון חינם למחזיקי כרטיס אשראי מפתח של דיסקונט, לכל מי שיכול להשיג אחד כזה משתלם מאוד. חוץ מזה יש עוד מספר חניונים באיזור וחניות כחול-לבן ברחובות הקטנים מסביב.
+
+
+
+      %a{:name => :doing}
+      %h4 אז מה עושים
+      %p במהלך היום אנחנו נעשה כ-6 סשנים, בכל סשן אתם תצתוותו לאדם אחר ובמהלך 45 הדקות של הסשן תעבדו על בעיית משחק החיים. המטרה היא לא בהכרח למצוא פתרון שלם לבעיה אלא להתאמן על עקרונות שונים של פיתוח תוכנה.
+      %p
+        פירוט יותר מלא על מה עושים בדרך כלל ביום כזה ניתן למצוא באתר הרישמי של 
+        %a{:href => "http://coderetreat.com"} coderetreat.com
+      %p
+        %strong שפות תכנות
+        %br
+        בעקרון אנחנו לא רוצים להגביל את שפות התכנות שאיתן תוכלו לעבוד ככה שמי שממש רוצה לתכנת ב- Brainfuck ומוצא בן זוג שגם רוצה מוזמן לחלוטין לעשות את זה.
+        
+      %a{:name => :sponser}
+      %h4 ספונסר
+      %p היום מאורגן בחסות ה- eBay Israel Social Center
+      %a{:href => "http://www.giftsproject.com/"}
+        %img{:src => "eisc.png"}
+      
+      %a{:name => :organizers}
+      %h4 מארגנים
+      .columns
+        .col
+
+
+    %footer
+      .r1
+      .r2
+      .r3

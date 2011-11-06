@@ -1,0 +1,163 @@
+@mixin corner{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1B120D;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'BNMazlegaRegular';
+    color: #F0A130;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    color: #E68D36;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+header {
+    background: #995E24;
+    position: relative;
+    height: 250px;
+    margin-top: 10px;
+    .text {
+        margin-left: 200px;
+        padding-top: 30px;
+    }
+}
+
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 30px;
+}
+
+.ribbon {
+    background: #D73513;
+    color: white;
+    font-family: 'BNMazlegaRegular';
+    position: absolute;
+    font-size: 30px;
+    left: -60px;
+    top: 20px;
+    width: 220px;
+    height: 170px;
+    text-align: center;
+
+    a {
+        display: block;
+        margin-top: 30px;
+        color: white;
+        text-decoration: none;
+        &:after {
+            @include corner;
+            bottom: 0;
+            border-width: 0 30PX 85PX 0;
+            border-BOTTOM-color: #D73513;
+            RIGHT: -30px;
+        }
+    }
+
+    &:before {
+        @include corner;
+        bottom: -30px;
+        border-width: 0 60px 30px 0;
+        border-right-color: #a42d14;
+        left: 0;
+    }
+    &:after {
+        @include corner;
+        TOP: 0;
+        border-width: 85PX 30PX 0 0;
+        border-top-color: #D73513;
+        RIGHT: -30px;
+    }
+}
+
+.main{
+    margin-top: 10px;
+    background: #FFFACB;
+    padding: 10px;
+    text-align: right;
+    direction: rtl;
+    position: relative;
+    padding-right: 115px;
+}
+
+a {
+    color: #D73513;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    a {
+        display: block;
+        background: #D73513;
+        color: white;
+        font-family: 'BNMazlegaRegular';
+        font-size: 14px;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        border-top: 2px solid white;
+        &:first-child{
+            border:none;
+        }
+        &:hover{
+            color: white;
+            background: #a42d14;
+        }
+
+        &:after{
+            @include corner;
+            bottom: -20px;
+            border-width: 0 0 20px 25px;
+            border-left-color: #a42d14;
+            right: 0;
+        }
+
+    }
+}
+
+.map{
+    float: left;
+    margin: 10px;
+    border: 2px solid #312118;
+}
+
+footer{
+    margin: 10px 0;
+    div{
+        width:100%;
+        height: 8px;
+    }
+    .r1{ background: #F0A130;}
+    .r2{ background: #a42d14;}
+    .r3{ background: #312118;}
+}
