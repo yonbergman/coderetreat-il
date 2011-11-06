@@ -22,8 +22,10 @@
         %a{:href => "#details"}!= "פרטים"
         %a{:href => "#location"}!= "מקום"
         %a{:href => "#doing"}!= "מה עושים"
+        %a{:href => "#registration"}!= "הרשמה"
         %a{:href => "#sponser"}!= "ספונסר"
         %a{:href => "#hosts"}!= "מנחים"
+        %a{:href => "#contact"}!= "שאלות"
 
       %a{:name => :beginning}
       %h4 מפגש קוד ריטריט
@@ -37,12 +39,14 @@
       %a{:name => :details}
       %h4 פרטים
       %ul
-        %li ההרשמה חובה ומחייבת, האירוע עצמו חינם אבל אנחנו מבקשים שתשארו כל היום - הרשמה
+        %li
+          != " ההרשמה חובה ומחייבת, האירוע עצמו חינם אבל אנחנו מבקשים שתשארו כל היום -"
+          %a{:href=>"http://globalcoderetreat2011-telaviv.eventbrite.com/"}!= "הרשמה"
         %li התחלה ב-9:00 בבקשה תגיעו בזמן
         %li סוף היום יהיה בסביבות 17:00 - 17:30
         %li תביאו לפטופ לפיתוח (בבקשה תדאגו שיש בו סביבה לכל שפה בה תרצו לעבוד)
         %li ארוחת בוקר וצהריים עלינו
-        %li מי שרוצה - בירה אחרי
+        %li אפטרפרטי בירה באחד הברים באזור
 
       .map
         <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=%D7%A9%D7%93%D7%A8%D7%95%D7%AA+%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93+73,+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91+%D7%99%D7%A4%D7%95,+%D7%99%D7%A9%D7%A8%D7%90%D7%9C&amp;aq=t&amp;sll=25.005973,37.089844&amp;sspn=62.957983,114.169922&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Sderot+Rothschild+73,+Tel+Aviv-Yafo,+Israel&amp;t=m&amp;ll=32.066374,34.776835&amp;spn=0.005455,0.006437&amp;z=16&amp;output=embed&amp;iwloc=near"></iframe>
@@ -60,7 +64,11 @@
 
       %a{:name => :doing}
       %h4 אז מה עושים
-      %p במהלך היום אנחנו נעשה כ-6 סשנים, בכל סשן אתם תצתוותו לאדם אחר ובמהלך 45 הדקות של הסשן תעבדו על בעיית משחק החיים. המטרה היא לא בהכרח למצוא פתרון שלם לבעיה אלא להתאמן על עקרונות שונים של פיתוח תוכנה.
+      %p
+        != "במהלך היום אנחנו נעשה כ-6 סשנים, בכל סשן אתם תצתוותו לאדם אחר ובמהלך 45 הדקות של הסשן תעבדו על בעיית"
+        %a{:href=>"http://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%97%D7%A7_%D7%94%D7%97%D7%99%D7%99%D7%9D_%28%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%98_%D7%AA%D7%90%D7%99%29"}!= "משחק החיים"
+        != ". המטרה היא לא בהכרח למצוא פתרון שלם לבעיה אלא להתאמן על עקרונות שונים של פיתוח תוכנה"
+
       %p
         פירוט יותר מלא על מה עושים בדרך כלל ביום כזה ניתן למצוא באתר הרישמי של 
         %a{:href => "http://coderetreat.com"} coderetreat.com
@@ -68,6 +76,9 @@
         %strong שפות תכנות
         %br
         בעקרון אנחנו לא רוצים להגביל את שפות התכנות שאיתן תוכלו לעבוד ככה שמי שממש רוצה לתכנת ב- Brainfuck ומוצא בן זוג שגם רוצה מוזמן לחלוטין לעשות את זה.
+
+      %a{:name => :registration}
+      %a.button{:href => "http://globalcoderetreat2011-telaviv.eventbrite.com/"}!= "להרשמה"
         
       %a{:name => :sponser}
       %h4 ספונסר
@@ -79,13 +90,45 @@
       %h4 מנחים
       .columns
         .col
-          .name יונתן ברגמן
-          %img{:src=> "yon.jpg", :width=> 70}
-          %a{:href=> "http://twitter.com/#!/yonbergman"}
-            #yonbergman
+          %img{:src=> "aviv.jpg", :width=> 100}
+          %aside
+            .name אביב בן-יוסף
+            .twitter
+              %a{:href=> "http://twitter.com/#!/avivby"}
+                :plain
+                  #avivby
+            .blog
+              %a{:href=>"http://www.codelord.net/"}!= "בלוג"
 
+
+        .col
+          %img{:src=> "yon.jpg", :width=> 100}
+          %aside
+            .name יונתן ברגמן
+            .twitter
+              %a{:href=> "http://twitter.com/#!/yonbergman"}
+                :plain
+                  #yonbergman
+            .blog
+              %a{:href=>"http://yon-line.info/"}!= "בלוג"
+
+
+
+      %a{:name => :contact}
+      %h4 לשאלות
+      %p
+        != "שאלות בקשות ועוד שאלות אפשר לפנות ל"
+        %a{:href=>"http://twitter.com/#!/yonbergman",:dir=>"ltr", :style=>"direction:ltr;"}!= "#yonbergman"
+        != "או לשלוח מייל לכתובת"
+        %span yon
+        %span כרוכית
+        %span coderetreat.co.il
+        
 
     %footer
       .r1
       .r2
       .r3
+      %a.page_designed{:href=>"http://yon-line.info"}
+        Page designed by
+        %em Yon

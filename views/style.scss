@@ -153,6 +153,10 @@ nav {
 
 footer{
     margin: 10px 0;
+    text-align: center;
+    a{
+        font-size: 12px;
+    }
     div{
         width:100%;
         height: 8px;
@@ -160,4 +164,54 @@ footer{
     .r1{ background: #F0A130;}
     .r2{ background: #a42d14;}
     .r3{ background: #312118;}
+}
+
+.columns{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 466px;
+    .col{
+        float: right;
+        margin-right: 20px;
+        &:first-child{
+            margin-right:0;
+        }
+        > img{
+            float: right;
+            margin-left: 15px;
+        }
+        aside{
+            float: right;
+        }
+        .name{
+            font-size: 20px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .twitter{
+            direction:ltr;
+            img,a{
+                vertical-align:middle;
+            }
+        }
+    }
+}
+
+a.button{
+    padding: 5px 15px;
+    background: #D73513;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 200px;
+    text-align:center;
+    margin: 30px auto;
+    display: block;
+    
+    &:hover{
+        color: #D73513;
+        background: white;
+    }
 }
