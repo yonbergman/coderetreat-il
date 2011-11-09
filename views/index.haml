@@ -42,7 +42,7 @@
       %ul
         %li
           != " ההרשמה חובה ומחייבת, האירוע עצמו חינם אבל אנחנו מבקשים שתשארו כל היום -"
-          %a{:href=>"http://globalcoderetreat2011-telaviv.eventbrite.com/"}!= "הרשמה"
+          %a{:href=>"https://docs.google.com/spreadsheet/viewform?formkey=dHpFUmJ6TTV0Vm52VUxJNWY2TTF1Unc6MQ"}!= "לרשימת המתנה"
         %li התחלה ב-9:00 בבקשה תגיעו בזמן
         %li סוף היום יהיה בסביבות 17:00 - 17:30
         %li תביאו לפטופ לפיתוח (בבקשה תדאגו שיש בו סביבה לכל שפה בה תרצו לעבוד)
@@ -78,8 +78,11 @@
         %br
         בעקרון אנחנו לא רוצים להגביל את שפות התכנות שאיתן תוכלו לעבוד ככה שמי שממש רוצה לתכנת ב- Brainfuck ומוצא בן זוג שגם רוצה מוזמן לחלוטין לעשות את זה.
 
-      %a{:name => :registration}
-      %a.button{:href => "http://globalcoderetreat2011-telaviv.eventbrite.com/"}!= "להרשמה"
+      .reg
+        %a{:name => :registration}
+        %a.no.button{:href => "javascript:;"}!= "להרשמה"
+        .closed!= "ההרשמה נסגרה"
+        %a.button{:href => "https://docs.google.com/spreadsheet/viewform?formkey=dHpFUmJ6TTV0Vm52VUxJNWY2TTF1Unc6MQ"}!= "לרשימת המתנה"
         
       %a{:name => :sponser}
       %h4 ספונסר

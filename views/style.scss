@@ -214,4 +214,40 @@ a.button{
         color: #D73513;
         background: white;
     }
+    &.no:hover{
+        color: white;
+        background: #D73513;
+    }
+}
+
+.reg{
+    position: relative;
+    overflow: hidden;
+    .button{
+        float: right;
+        margin-right: 40px;
+        &.no{
+            margin-right: 20%;
+        }
+
+    }
+    .closed{
+        display: block;
+        background: yellow;
+        border: 1px solid black;
+        width: 250px;
+        height: 30px;
+        text-align:center;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        line-height: 30px;
+        margin:0 auto;
+        position:absolute;
+        top: 30px;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -mozilla-transform: rotate(8deg);
+        left: 417px;
+    }
 }
