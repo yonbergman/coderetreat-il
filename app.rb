@@ -2,7 +2,7 @@ require 'sinatra'
 set :haml, :format => :html5
 
 get '/' do
-  redirect "2012"
+  redirect "/2012"
 end
 
 get '/2012' do
