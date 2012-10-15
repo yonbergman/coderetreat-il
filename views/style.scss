@@ -88,6 +88,12 @@ h3 {
         border-top-color: #D73513;
         RIGHT: -30px;
     }
+
+    &.new{
+      a{
+        margin-top: 20px;
+      }
+    }
 }
 
 .main{
@@ -170,6 +176,9 @@ footer{
     overflow: hidden;
     margin: 0 auto;
     width: 466px;
+    &.new{
+      width: 255px;
+    }
     .col{
         float: right;
         margin-right: 20px;
@@ -249,5 +258,12 @@ a.button{
         -webkit-transform: rotate(8deg);
         -mozilla-transform: rotate(8deg);
         left: 417px;
+    }
+
+    &.one{
+      .button{
+        float: none;
+        margin: 0 auto;
+      }
     }
 }
