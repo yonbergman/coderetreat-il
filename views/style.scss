@@ -36,6 +36,14 @@ header {
         margin-left: 200px;
         padding-top: 30px;
     }
+
+  h2{
+    strong{
+      color: #F0C690;
+      //font-weight: normal;
+    }
+    direction: rtl;
+  }
 }
 
 h1 {
@@ -115,11 +123,46 @@ a {
     margin: 0 auto;
 }
 
+.notice{
+  text-align: center;
+  margin: 10px 10px;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  background: white;
+  margin: 10px -20px;
+  margin-right: -125px;
+  padding: 10px;
+  //padding-right: 125px;
+  position: relative;
+
+  &:before {
+    @include corner;
+    bottom: -10px;
+    border-width: 0 10px 10px 0;
+    border-right-color: #ddd;
+    left: 0;
+  }
+  &:after {
+    @include corner;
+    right: 0;
+    border-width: 0 0 10PX 10PX;
+    border-left-color: #ddd;
+    bottom: -10px;
+  }
+}
 
 nav {
     position: absolute;
     top: 30px;
     right: -25px;
+    &.with_notice{
+      top: 75px;
+    }
     a {
         display: block;
         background: #D73513;

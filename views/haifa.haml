@@ -1,6 +1,6 @@
 !!!5
 %head
-  %title!= "מפגש הקוד ריטריט העברי השני"
+  %title!= "מפגש הקוד ריטריט העברי השני - חיפה"
   %link{:rel => "stylesheet", :href => "font/stylesheet.css", :type => "text/css", :media => "screen", :charset => "utf-8"}
   %link{:rel => "stylesheet", :href => "/style", :type => "text/css", :media => "screen", :charset => "utf-8"}
   %link{:rel => "shortcut icon", :href => "/favicon.ico"}
@@ -9,7 +9,10 @@
     %header
       .text
         %h1!= "מפגש הקוד ריטריט"
-        %h2!= "העברי השני"
+        %h2
+          != "העברי השני"
+          %span="-"
+          %strong= "בחיפה!"
         %h3!= "יום שבת ה-8 בדצמבר"
       .ribbon.new
         %a{:href => "http://globalday.coderetreat.org/"}
@@ -19,18 +22,11 @@
           %br
           != "לקוד ריטריט 2012"
     .main
-
-      .notice
-        %a{:href => "/haifa"}
-          %span
-            %strong= "לאור הביקוש"
-            = "- נפתח השנה מוקד מפגש נוסף במשרדי"
-            %strong= "גוגל בחיפה"
-      %nav.with_notice
+      %nav
         %a{:href => "#details"}!= "פרטים"
         %a{:href => "#location"}!= "מקום"
         %a{:href => "#doing"}!= "מה עושים"
-        %a{:href => "https://docs.google.com/spreadsheet/viewform?formkey=dHU1TWdtRUd1bnpvNEd2a3lJMktBWlE6MQ"}!= "הרשמה"
+        %a{:href => "http://goo.gl/ux15y"}!= "הרשמה"
         %a{:href => "#sponser"}!= "ספונסר"
         %a{:href => "#hosts"}!= "מנחים"
         %a{:href => "#contact"}!= "שאלות"
@@ -38,16 +34,14 @@
       %a{:name => :beginning}
       %h4 מפגש קוד ריטריט
       %p
-        ביום שבת ה-8 לדצמבר מתרחש ברחביי העולם יום הקוד ריטריט הבינלאומי, זוהי הפעם השניה שיום כזה מתרחש ואחרי ההצלחה של שנה שעברה אנחנו משתתפים שוב !
+        ביום שבת ה-8 לדצמבר מתרחש ברחביי העולם יום הקוד ריטריט הבינלאומי, זוהי הפעם השניה שיום כזה מתרחש.
         %br
         קוד ריטריט הוא יום שלם שמוגדש ללמידה ואימון של יכולות פיתוח התוכנה שלכם. מטרת היום היא לתת סביבה נקייה מרעש של 'דדליינים' ומשימות כדי לאפשר לכם להתאמן על עקרונות פיתוח התוכנה החשובים לכם.
         %br
         במהלך היום יצא לכם לעבוד בזוגות עם עם מספר אנשים ולהתאמן על TDD, Clean Code, SOLID ועוד עקרונות פיתוח תוכנה שלא בהכרח מוצאים להם זמן ביום-יום.
         %br
         %br
-        %strong אנחנו יודעים ששנה שעברה ההרשמה נסגרה מהר מאוד
-        %br
-        לכן השנה אנחנו פותחים את ההרשמה מוקדם יותר והכפלנו את כמות המקומות!
+        %strong השנה נארח מוקד נוסף למפגש - בחיפה!
 
       %a{:name => :details}
       %h4 פרטים
@@ -61,19 +55,19 @@
         %li אפטר-פרטי בירה באחד הברים באזור
 
       .map
-        <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93+13+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=73.949019,153.984375&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Sderot+Rothschild+13,+Tel+Aviv-Yafo,+Israel&amp;ll=32.063137,34.770677&amp;spn=0.005455,0.006437&amp;z=16&amp;iwloc=B&amp;output=embed"></iframe>
+        <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=google+haifa&amp;hl=en&amp;sll=32.78942,34.9587&amp;sspn=0.006287,0.011689&amp;hq=google+haifa&amp;t=m&amp;ie=UTF8&amp;hnear=&amp;cid=13534243781172954506&amp;ll=32.788862,34.960041&amp;spn=0.021647,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
       %a{:name => :location}
       %h4 מקום
       %p
-        המפגש יערך במשרדי ה- eBay Israel Social Center, ברוטשילד 13 קרוב לפינה עם הרצל.
-        הכניסה מצד שמאל של הבניין, קומה ראשונה.
+        המפגש יערך במשרדי גוגל חיפה.
         %br
-        %strong שימו לב משתתפים משנה שעברה - עברנו משרדים
+        בניין 30 מת"מ, מרכז תעשיות מדע
+        %br
+        קומה 5.
       %p
-        %strong חניה
-        %br
-        יש מספר חניונים באזור, בכניסה לנווה צדק ומתחת למגדל שלום.
-        אבל בדרך כלל אין בעיה למצוא בימי שבת בבוקר חניה על רחוב הרצל.
+        -#%strong חניה
+        -#%br
+        פרטי חניה בקרוב
 
       %a{:name => :doing}
       %h4 אז מה עושים
@@ -92,40 +86,41 @@
 
       .reg.one
         %a{:name => :registration}
-        %a.button{:href => "https://docs.google.com/spreadsheet/viewform?formkey=dHU1TWdtRUd1bnpvNEd2a3lJMktBWlE6MQ"}!= "להרשמה"
+        %a.button{:href => "http://goo.gl/ux15y"}!= "להרשמה"
+
 
 
       %a{:name => :sponser}
       %h4 ספונסר
-      %p היום מאורגן בחסות ה- eBay Israel Social Center
-      %a{:href => "http://notninjas.com/"}
-        %img{:src => "isclogo.png"}
+      %p היום מאורגן בחסות גוגל ישראל
+      %a{:href => "http://google.co.il/"}
+        %img{:src => "http://www.google.com/images/logos/google_logo_41.png"}
       
       %a{:name => :hosts}
       %h4 מנחים
       .columns.new
         .col
-          %img{:src=> "aviv.jpg", :width=> 100}
+          %img{:src=> "https://twimg0-a.akamaihd.net/profile_images/1551756519/IMG_5310_reasonably_small.jpg", :width=> 100}
           %aside
-            .name אביב בן-יוסף
+            .name ישראל שלום
             .twitter
-              %a{:href=> "http://twitter.com/#!/avivby"}
+              %a{:href=> "https://twitter.com/srulix"}
                 :plain
-                  @avivby
-            .blog
-              %a{:href=>"http://www.codelord.net/"}!= "בלוג"
+                  @srulix
+            -#.blog
+            -#  %a{:href=>"http://www.codelord.net/"}!= "בלוג"
 
 
         .col
-          %img{:src=> "yon.jpg", :width=> 100}
+          %img{:src=> "https://twimg0-a.akamaihd.net/profile_images/1142884802/DSCN1770__1__reasonably_small.JPG", :width=> 100}
           %aside
-            .name יונתן ברגמן
+            .name איתי ממן
             .twitter
-              %a{:href=> "http://twitter.com/#!/yonbergman"}
+              %a{:href=> "https://twitter.com/pembleton"}
                 :plain
-                  @yonbergman
-            .blog
-              %a{:href=>"http://yonbergman.com/"}!= "בלוג"
+                  @pembleton
+            -#.blog
+            -#  %a{:href=>"http://yonbergman.com/"}!= "בלוג"
 
 
 
@@ -133,20 +128,11 @@
       %h4 לשאלות
       %p
         != "שאלות בקשות ועוד שאלות אפשר לפנות ל"
-        %a{:href=>"http://twitter.com/#!/yonbergman",:dir=>"ltr", :style=>"direction:ltr;"}!= "@yonbergman"
+        %a{:href=>"http://twitter.com/#!/srulix",:dir=>"ltr", :style=>"direction:ltr;"}!= "@srulix"
         != "או לשלוח מייל לכתובת"
         %span yon
         %span כרוכית
         %span coderetreat.co.il
-
-      %br
-      %h4 המפגש של שנה שעברה (2011)
-      %a{:href => "https://www.facebook.com/media/set/?set=a.10150403112706417.343421.656296416&type=1&l=5de33fe656"}
-        %img{:src => "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-snc6/377049_10150403122776417_934030946_n.jpg", :width => "80%"}
-      %br
-      %span לצפייה בעמוד של שנה שעברה -
-      %a{:href => "/2011"} 2011
-        
 
     %footer
       .r1

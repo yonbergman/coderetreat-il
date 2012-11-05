@@ -9,6 +9,10 @@ get '/2012' do
   haml :day2012
 end
 
+get '/haifa' do
+  haml :haifa
+end
+
 get '/2011' do
   haml :day2011
 end
