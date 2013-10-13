@@ -27,6 +27,21 @@ h4 {
     margin: 10px 0;
 }
 
+.sponsor-logo{
+  text-align: center;
+  display: block;
+}
+.thumb{
+  width: 320px;
+  height: 240px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  img{
+    height: 100%;
+  }
+}
+
 header {
     background: #995E24;
     position: relative;
