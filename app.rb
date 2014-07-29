@@ -2,7 +2,11 @@ require 'sinatra'
 set :haml, :format => :html5
 
 get '/' do
-  redirect '/2013'
+  redirect '/2014'
+end
+
+get '/2014' do
+  haml :day2014
 end
 
 get '/2013' do

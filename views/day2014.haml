@@ -1,0 +1,156 @@
+!!!5
+%head
+  %title!= "מפגש הקוד ריטריט העברי הרביעי"
+  %link{:rel => "stylesheet", :href => "font/stylesheet.css", :type => "text/css", :media => "screen", :charset => "utf-8"}
+  %link{:rel => "stylesheet", :href => "/style", :type => "text/css", :media => "screen", :charset => "utf-8"}
+  %link{:rel => "shortcut icon", :href => "/favicon.ico"}
+%body
+  .container
+    %header
+      .text
+        %h1!= "מפגש הקוד ריטריט"
+        %h2!= "העברי הרביעי"
+        %h3!= "יום שבת ה-15 בנובמבר 2014"
+      .ribbon.new
+        %a{:href => "http://globalday.coderetreat.org/"}
+          != "חלק מהיום"
+          %br
+          != "הבינלאומי"
+          %br
+          != "לקוד ריטריט 2014"
+    .main
+      %nav.with_notice
+        %a{:href => "#details"}!= "פרטים"
+        %a{:href => "#location"}!= "מקום"
+        %a{:href => "#doing"}!= "מה עושים"
+        %a{:href => "#registration"}!= "הרשמה בקרוב"
+        %a{:href => "#sponser"}!= "ספונסר"
+        %a{:href => "#hosts"}!= "מנחים"
+        %a{:href => "#contact"}!= "שאלות"
+
+      %a{:name => :beginning}
+      %h4 מפגש קוד ריטריט
+      %p
+        ביום שבת ה-15 לנובמבר מתרחש ברחביי העולם יום הקוד ריטריט הבינלאומי, זוהי הפעם הרביעית שיום כזה מתרחש
+        ובעקבות ההצלחות של שנים קודמות אנחנו מארגנים את האירוע שוב!
+        %br
+        קוד ריטריט הוא יום שלם שמוקדש ללמידה ואימון של יכולות פיתוח התוכנה שלכם. מטרת היום היא לתת סביבה נקייה מרעש של 'דדליינים' ומשימות כדי לאפשר לכם להתאמן על עקרונות פיתוח התוכנה החשובים לכם.
+        %br
+        במהלך היום יצא לכם לעבוד בזוגות עם עם מספר אנשים ולהתאמן על TDD, Clean Code, SOLID ועוד עקרונות פיתוח תוכנה שלא בהכרח מוצאים להם זמן ביום-יום.
+        %br
+        %br
+        %strong ההרשמה לאירוע השנה תפתח בספטמבר
+
+      %a{:name => :details}
+      %h4 פרטים
+      %ul
+        %li ההרשמה חובה, האירוע עצמו חינם אבל אנחנו מבקשים שתשארו כל היום
+        %li במידה ואתם חושבים שלא תוכלו להשאר עד סופו תודיעו מראש
+        %li היום יתחיל ב-9:00, בבקשה תגיעו בזמן
+        %li סוף היום יהיה בסביבות 17:00 - 17:30
+        %li תביאו לפטופ לפיתוח (בבקשה תדאגו שיש בו סביבה לכל שפה בה תרצו לעבוד)
+        %li ארוחת בוקר וצהריים עלינו
+        %li אפטר-פרטי בירה באחד הברים באזור
+
+      .map
+        <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93+13+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=73.949019,153.984375&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Sderot+Rothschild+13,+Tel+Aviv-Yafo,+Israel&amp;ll=32.063137,34.770677&amp;spn=0.005455,0.006437&amp;z=16&amp;iwloc=B&amp;output=embed"></iframe>
+      %a{:name => :location}
+      %h4 מקום
+      %p
+        המפגש יערך במשרדי ה- eBay Israel Innovation Center, ברוטשילד 13 קרוב לפינה עם הרצל.
+        הכניסה מצד שמאל של הבניין, קומה ראשונה.
+      %p
+        %strong חניה
+        %br
+        יש מספר חניונים באזור, בכניסה לנווה צדק, מתחת למגדל שלום וחניון עצום חדש בקצה רוטשילד.
+        אבל בדרך כלל אין בעיה למצוא בימי שבת בבוקר חניה על רחוב הרצל.
+
+      %a{:name => :doing}
+      %h4 אז מה עושים
+      %p
+        != "במהלך היום אנחנו נעשה כ-6 סשנים, בכל סשן אתם תצטוותו לאדם אחר ובמהלך 45 הדקות של הסשן תעבדו על בעיית"
+        %a{:href=>"http://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%97%D7%A7_%D7%94%D7%97%D7%99%D7%99%D7%9D_%28%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%98_%D7%AA%D7%90%D7%99%29"}!= "משחק החיים"
+        != ". המטרה היא לא בהכרח למצוא פתרון שלם לבעיה אלא להתאמן על עקרונות שונים של פיתוח תוכנה"
+
+      %p
+        פירוט יותר מלא על מה עושים בדרך כלל ביום כזה ניתן למצוא באתר הרישמי של
+        %a{:href => "http://coderetreat.com"} coderetreat.com
+      %p
+        %strong שפות תכנות
+        %br
+        בעקרון אנחנו לא רוצים להגביל את שפות התכנות שאיתן תוכלו לעבוד ככה שמי שממש רוצה לתכנת ב- Brainfuck ומוצא בן זוג שגם רוצה מוזמן לחלוטין לעשות את זה.
+
+      .reg.one
+        %a{:name => :registration}
+        %a.button{:href => "#"}!= "ההרשמה בקרוב"
+
+
+      %a{:name => :sponser}
+      %h4 ספונסר
+      %p היום מאורגן בחסות ה- eBay Israel Innovation Center
+      %a.sponsor-logo{:href => "http://notninjas.com/", :target => :_blank}
+        %img{:src => "iic-logo-small.png"}
+
+      %a{:name => :hosts}
+      %h4 מנחים
+      .columns.new
+        .col
+          %img{:src=> "aviv.jpg", :width=> 100}
+          %aside
+            .name אביב בן-יוסף
+            .twitter
+              %a{:href=> "http://twitter.com/#!/avivby", :target => :_blank}
+                :plain
+                  @avivby
+            .blog
+              %a{:href=>"http://www.codelord.net/", :target => :_blank}!= "בלוג"
+
+
+        .col
+          %img{:src=> "yon-new.jpg", :width=> 100}
+          %aside
+            .name יונתן ברגמן
+            .twitter
+              %a{:href=> "http://twitter.com/#!/yonbergman", :target => :_blank}
+                :plain
+                  @yonbergman
+            .blog
+              %a{:href=>"http://yonbergman.com/", :target => :_blank}!= "בלוג"
+
+
+
+      %a{:name => :contact}
+      %h4 לשאלות
+      %p
+        != "שאלות בקשות ועוד שאלות אפשר לפנות ל"
+        %a{:href=>"http://twitter.com/#!/yonbergman",:dir=>"ltr", :style=>"direction:ltr;", :target => :_blank}!= "@yonbergman"
+        != "או לשלוח מייל לכתובת"
+        %span yon
+        %span כרוכית
+        %span coderetreat.co.il
+
+      %br
+      %h4 תמונות ממפגשים שהיו
+      %a.thumb.col-3{:href => "https://www.facebook.com/media/set/?set=a.10152222080746417.1073741829.656296416&type=1&l=955bac7dbb", :title => '2013', :target => :_blank}
+        %img{:src => "https://scontent-a-lhr.xx.fbcdn.net/hphotos-xfp1/t31.0-8/10295470_10152222081831417_3701424744113898602_o.jpg"}
+      %a.thumb.col-3{:href => "https://www.facebook.com/media/set/?set=a.10151143898406417.426715.656296416&type=1&l=cf57dde22f", :title => '2012', :target => :_blank}
+        %img{:src => "https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/52758_10151143915341417_881091429_n.jpg"}
+      %a.thumb.col-3{:href => "https://www.facebook.com/media/set/?set=a.10150403112706417.343421.656296416&type=1&l=5de33fe656", :title => '2011', :target => :_blank}
+        %img{:src => "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-snc6/377049_10150403122776417_934030946_n.jpg"}
+
+      %br
+      %span לצפייה בעמודים של שנים עברו -
+      %a{:href => "/2013"} 2013
+      %span= '|'
+      %a{:href => "/2012"} 2012
+      %span= '|'
+      %a{:href => "/2011"} 2011
+
+
+    %footer
+      .r1
+      .r2
+      .r3
+      %a.page_designed{:href=>"http://yonbergman.com"}
+        Page designed by
+        %em Yon
