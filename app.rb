@@ -39,6 +39,10 @@ get '/initech' do
   haml :'initech/initech'
 end
 
+get '/initech/onboarding' do
+  haml :'initech/initech'
+end
+
 get '/initech/application.js' do
   coffee :'initech/application'
 end

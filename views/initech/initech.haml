@@ -23,7 +23,7 @@
 %body
   .container
     %header
-      %img{src: 'initech.png'}
+      %img{src: '/initech.png'}
     .body
     %hr
     %footer
@@ -62,11 +62,45 @@
           .saved-label.label.label-success.hidden
             %i.fa.fa-check
             %span Saved !
+    %p
+      %br
+      For the new employee onboarding process
+      %a{:href => '/initech/onboarding'} click here
 
-  %script#welcome{type: 'text/template'}
-    %h2 Welcome to Initech
-    %p The onboarding process for every new employee includes taking over a legacy project from one of our nicest AAA ninja developers.
-    %ul.languages
+  %script#onboarding{type: 'text/template'}
+    .page-header
+      %h1 New Employee onboarding
+      %p Welcome, Initech's new employee onboarding process includes taking over a legacy project from one of our nicest, bestest AAA rockstar-ninja developers.
+    %h2 Choose your prefered programming language
+    %form.submit-form.form-horizontal
+      .form-group
+        %label.control-label.col-sm-2{for: 'language'} Language:
+        .col-sm-6
+          %select#language.form-control
+      .form-group
+        .col-sm-6.col-sm-offset-2
+          %button.btn.btn-default{type: 'submit'} Choose
+    %p
+      %br
+      To submit code from the session
+      %a{:href => '/initech'} click here
+
+  %script#download{type: 'text/template'}
+    .page-header
+      %h1 New Employee onboarding
+      %p Welcome, Initech's new employee onboarding process includes taking over a legacy project from one of our nicest, bestest AAA rockstar-ninja developers.
+    %h2 Download the code
+    %dl.dl-horizontal
+      %dt Author
+      %dd <%= author %>
+      %dt Language
+      %dd <%= language %>
+      %dt
+      %dd
+        <a href="<%= fileurl %>" class='btn btn-default'>
+        <i class='fa fa-save'></i> Download
+        </a>
+
 
   %script#loading{type: 'text/template'}
     %i.fa.fa-circle-o-notch.fa-3x.fa-spin
