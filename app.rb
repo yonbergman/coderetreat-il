@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'coffee-script'
 set :haml, :format => :html5
 
 get '/' do
@@ -31,6 +32,19 @@ end
 
 get '/style' do
   scss :style, :style => :expanded
+end
+
+
+get '/initech' do
+  haml :'initech/initech'
+end
+
+get '/initech/application.js' do
+  coffee :'initech/application'
+end
+
+get '/initech/style.css' do
+  scss :'initech/style'
 end
 
 

@@ -1,0 +1,68 @@
+!!!5
+%head
+  %title!= "Initech secure intranet"
+  %script{:src => 'https://code.jquery.com/jquery-2.1.1.min.js'}
+  %script{:src => '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'}
+  %script{:src => '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js'}
+  %script{:src => '//cdn.jsdelivr.net/parse/1.2.9/parse.min.js'}
+  %script{:src => '/initech/application.js'}
+  %link{:rel => "stylesheet", :href => "/initech/style.css", :type => "text/css", :media => "screen", :charset => "utf-8"}
+  %link{:rel => "stylesheet", :href => "//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css", :type => "text/css", :media => "screen", :charset => "utf-8"}
+  %link{:rel => "stylesheet", :href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :type => "text/css", :media => "screen", :charset => "utf-8"}
+  %link{:rel => "shortcut icon", :href => "/favicon.ico"}
+  :javascript
+    $(document).on('change', '.btn-file :file', function() {
+        var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        console.log(label);
+        input.trigger('fileselect', [numFiles, label]);
+    });
+
+
+%body
+  .container
+    %header
+      %img{src: 'initech.png'}
+    .body
+    %hr
+    %footer
+      Page designed by
+      %a.page_designed{:href=>"http://yonbergman.com"}
+        %em @yonbergman
+
+  %script#submit-form{type: 'text/template'}
+    .page-header
+      %h1 Submit your code
+    %form.submit-form.form-horizontal
+      .form-group
+        %label.control-label.col-sm-2{for: 'language'} Language:
+        .col-sm-6
+          %select#language.form-control
+      .form-group
+        %label.control-label.col-sm-2{for: 'file'} Zip File:
+        .col-sm-6
+          .input-group
+            %span.input-group-btn
+              .btn.btn-default.btn-file
+                %input#file{type: 'file', accept: 'application/zip'}
+                Upload File
+            %input.filenames{type: 'text', class: 'form-control', disabled: 'disabled'}
+
+      .form-group
+        .col-sm-6.col-sm-offset-2
+          %button.btn.btn-default{type: 'submit'} Submit
+          .saving-label.label.label-warning.hidden
+            %i.fa.fa-spinner.fa-spin
+            %span Saving...
+          .saved-label.label.label-success.hidden
+            %i.fa.fa-check
+            %span Saved !
+
+  %script#welcome{type: 'text/template'}
+    %h2 Welcome to Initech
+    %p The onboarding process for every new employee includes taking over a legacy project from one of our nicest AAA ninja developers.
+    %ul.languages
+
+  %script#loading{type: 'text/template'}
+    %i.fa.fa-circle-o-notch.fa-3x.fa-spin
