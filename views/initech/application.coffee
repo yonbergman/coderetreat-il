@@ -54,6 +54,8 @@ class App.SubmitView extends Backbone.View
     relation = @model.relation('language')
     relation.add(language)
 
+    @model.set('author', @authorSelect().val())
+
     @disableButton()
     @showSavingLabel()
     @model.save({},
@@ -62,6 +64,9 @@ class App.SubmitView extends Backbone.View
         @enableButton()
     )
 
+
+  authorSelect: ->
+    @$el.find('#author')
 
   languageSelect: ->
     @$el.find('#language')

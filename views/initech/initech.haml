@@ -36,6 +36,10 @@
       %h1 Submit your code
     %form.submit-form.form-horizontal
       .form-group
+        %label.control-label.col-sm-2{for: 'author'} Author Name:
+        .col-sm-6
+          %input#author.form-control{type: 'text', placeholder: '@milton'}
+      .form-group
         %label.control-label.col-sm-2{for: 'language'} Language:
         .col-sm-6
           %select#language.form-control
