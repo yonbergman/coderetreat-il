@@ -3,7 +3,11 @@ require 'coffee-script'
 set :haml, :format => :html5
 
 get '/' do
-  redirect '/2014'
+  redirect '/2015'
+end
+
+get '/2015' do
+  haml :day2015
 end
 
 get '/2014' do
@@ -50,5 +54,3 @@ end
 get '/initech/style.css' do
   scss :'initech/style'
 end
-
-
